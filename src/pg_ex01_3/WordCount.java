@@ -12,7 +12,7 @@ public class WordCount {
 		TreeMap<String, Integer> tm = new TreeMap<String, Integer>();
 		String line;
 		while((line = br.readLine()) != null) {
-			String[] words = line.split("[.,;:!?\\s]+");
+			String[] words = line.split("[.,;:!?\"\\s]+");
 			for(String s : words) {
 				s = s.toLowerCase();
 				if(!tm.containsKey(s)) {
